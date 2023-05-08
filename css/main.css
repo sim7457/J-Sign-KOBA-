@@ -1,217 +1,314 @@
+/* * {
+  outline: 1px solid tomato;
+} */
+
 .Wrap {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 /* header start */
 
 #header .gnb {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-    box-shadow: 0px -1px 5px;
-    z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0px -1px 5px;
+  z-index: 999;
 }
 
 #header .gnb .nav ul {
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: 'LG_Smart_UI-SemiBold';
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "LG_Smart_UI-SemiBold";
 }
 #header .gnb .nav ul li {
-    padding: 0 60px;
+  position: relative;
+  padding: 0 60px;
 }
+/* 마우스 오버 아래 바 만들기 설정 */
+/* #header .gnb .nav ul li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 3px;
+  background: #000;
+}
+#header .gnb .nav ul li:hover::after {
+  width: 100%;
+  transform: 0.3s;
+} */
 #header .gnb .nav ul li:hover {
-    color: #4e73df;
+  color: #bb0841;
 }
-
 #header .gnb .form-control {
-    display: flex;
-    gap: 60px;
+  display: flex;
+  gap: 60px;
 }
 
 #header .gnb .form-control select {
-    width: 150px;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #6e707e;
-    background-color: #fff;
-    border: 1px solid #d1d3e2;
-    border-radius: 0.35rem;
+  width: 150px;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+  background-color: #fff;
+  border: 1px solid #d1d3e2;
+  border-radius: 0.35rem;
+  outline: none;
 }
 
 /* header and */
-main{
-    height: calc(100vh - 118px);
-    z-index: 888;
-
+main {
+  height: calc(100vh - 118px);
+  z-index: 888;
 }
 main .inner {
-    display: flex;
-    gap: 50px;
-    padding: 40px 5% 30px 5%;
+  display: flex;
+  gap: 50px;
+  padding: 40px 5% 30px 5%;
 }
 /* 왼쪽 박스 */
 main .inner .left_box {
-    width: auto;
+  width: auto;
 }
-main .inner .left_box h2{
-    font-size: 20px;
-    font-weight: 700;
-    color: #4e73df;
-    margin-bottom: 30px;
+main .inner .left_box h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bb0841;
+  margin-bottom: 30px;
 }
 main .inner .left_box .Equipment_list {
-    width: 150px;
-    height: 731px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #e3e6f0;
-    border-radius: 1rem;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-    padding: 1.5rem;
-
+  width: 150px;
+  height: 731px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e3e6f0;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding: 1.5rem;
 }
 main .inner .left_box .Equipment_list .list_case {
-    margin-bottom: 30px;
-    cursor: pointer;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 main .inner .left_box .Equipment_list .list_case p {
-    font-weight: 400;
+  font-weight: 400;
 }
-main .inner .left_box .Equipment_list .list_case:hover{
-    color: #4e73df;
+main .inner .left_box .Equipment_list .list_case:hover {
+  color: #bb0841;
 }
-main .inner .left_box .Equipment_list img{ 
-    width: 80px;
-    margin-bottom: 10px;   
+main .inner .left_box .Equipment_list img {
+  width: 80px;
+  margin-bottom: 10px;
 }
 /* 가운데 박스 */
 
 main .inner .main_box {
-    width: 60%;
+  width: 60%;
 }
-main .inner .main_box h2{
-    font-size: 20px;
-    font-weight: 700;
-    color: #4e73df;
-    margin-bottom: 30px;
+main .inner .main_box h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bb0841;
+  margin-bottom: 30px;
 }
-main .inner .main_box .tit_box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main .inner .main_box .tit_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-main .inner .main_box .tit_box .Format_settings{
-    padding: 8px 10px;
-    background: #4e73df;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 10px;
+main .inner .main_box .tit_box .Format_settings {
+  padding: 8px 10px;
+  background: #bb0841;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #bb0841;
+  margin-bottom: 10px;
 }
-main .inner .main_box .Editing_board{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #e3e6f0;
-    border-radius: 1rem;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-    padding: 1.5rem;
-    margin-bottom: 20px;
+main .inner .main_box .tit_box .Format_settings:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  transition: 0.3s;
 }
-main .inner .main_box .upload_box{
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} 
-main .inner .main_box .upload_box p{
-    font-size: 20px;
-    font-weight: 700;
-    color: #4e73df;
+main .inner .main_box .Editing_board {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e3e6f0;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding: 1.5rem;
+  margin-bottom: 20px;
 }
-main .inner .main_box .save{
-    float: right;
-    padding: 8px 10px;
-    background: #4e73df;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    cursor: pointer;
+main .inner .main_box .upload_box {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-main .inner .main_box .upload{
-    float: right;
-    padding: 8px 10px;
-    margin-right: 20px;
-    background: #4e73df;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    cursor: pointer;
+main .inner .main_box .upload_box p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bb0841;
 }
-main .inner .main_box .Content_Settings{
-    width: 100%;
-    height: 206px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #e3e6f0;
-    border-radius: 1rem;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-    padding: 1.5rem;
+main .inner .main_box .save {
+  float: right;
+  padding: 8px 10px;
+  background: #bb0841;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: 1px solid #bb0841;
+  cursor: pointer;
+}
+main .inner .main_box .save:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+main .inner .main_box .upload {
+  float: right;
+  padding: 8px 10px;
+  margin-right: 20px;
+  background: #bb0841;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: 1px solid #bb0841;
+  cursor: pointer;
+}
+main .inner .main_box .upload:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+main .inner .main_box .Content_Settings {
+  width: 100%;
+  height: 206px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  overflow: hidden;
+  /* padding: 1.5rem; */
+}
+main .inner .main_box .Content_Settings table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  height: 206px;
+}
+main .inner .main_box .Content_Settings table td {
+  padding: 10px;
+}
+main .inner .main_box .Content_Settings table tr .bg_01 {
+  background-color: #f2f2f2;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 6rem;
+}
+main .inner .main_box .Content_Settings table tr .bg_02 {
+  border-bottom: 1px solid #ddd;
+}
+main .inner .main_box .Content_Settings table tr .bg_02 input {
+  width: 100%;
+  height: 70%;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding-left: 5px;
+  outline: none;
+}
+main .inner .main_box .Content_Settings table tr .bg_02 input:focus {
+  border: 1px solid #ddd;
+}
+main .inner .main_box .Content_Settings table tr .bg_03 {
+  background-color: #f2f2f2;
+  border-right: 1px solid #ddd;
+}
+main .inner .main_box .Content_Settings table tr .bg_04 button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.8rem;
+  position: relative;
+}
+main .inner .main_box .Content_Settings table tr .bg_04 button:hover {
+  color: #bb0841;
 }
 
+main .inner .main_box .Content_Settings table tr .bg_04 button img {
+  width: 25px;
+  margin-bottom: 7px;
+}
+main .inner .main_box .Content_Settings table tr .bg_04 button p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
 /* 오른쪽 박스 */
 main .inner .right_box {
-    width: 100%;
+  width: 100%;
 }
-main .inner .right_box h2{
-    font-size: 20px;
-    font-weight: 700;
-    color: #4e73df;
-    margin-bottom: 30px;
+main .inner .right_box h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bb0841;
+  margin-bottom: 30px;
 }
-main .inner .right_box .tit_box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main .inner .right_box .tit_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-main .inner .right_box .tit_box .Delete{
-    padding: 8px 10px;
-    background: #4e73df;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 10px;
+main .inner .right_box .tit_box .Delete {
+  padding: 8px 10px;
+  background: #bb0841;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #bb0841;
+  margin-bottom: 10px;
+}
+main .inner .right_box .tit_box .Delete:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  transition: 0.3s;
 }
 main .inner .right_box .Content_list {
-    width: 100%;
-    height: 206px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #e3e6f0;
-    border-radius: 1rem;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-    padding: 1.5rem;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 206px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e3e6f0;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding: 1.5rem;
+  margin-bottom: 20px;
 }
 
-main .inner .right_box .Schedule{
-    width: 100%;
-    height: 455px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #e3e6f0;
-    border-radius: 1rem;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-    padding: 1.5rem;
+main .inner .right_box .Schedule {
+  width: 100%;
+  height: 455px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e3e6f0;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding: 1.5rem;
 }
-
 
 /* main start */
