@@ -245,9 +245,9 @@ main .inner .main_box .Content_Settings table tr .bg_04 button {
   margin-right: 0.8rem;
   position: relative;
 }
-main .inner .main_box .Content_Settings table tr .bg_04 button:hover {
+/* main .inner .main_box .Content_Settings table tr .bg_04 button:hover {
   color: #bb0841;
-}
+} */
 
 main .inner .main_box .Content_Settings table tr .bg_04 button img {
   width: 25px;
@@ -308,7 +308,39 @@ main .inner .right_box .Schedule {
   border: 1px solid #e3e6f0;
   border-radius: 1rem;
   box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  overflow: hidden;
+}
+main .inner .right_box .Schedule table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  height: 206px;
+}
+
+main .inner .right_box .Schedule table .bg_01 {
+  background-color: #f2f2f2;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 6rem;
+}
+main .inner .right_box .Schedule table .Schedule_menu_top {
+  height: 60px;
+}
+main .inner .right_box .Schedule table .Schedule_menu_mid {
+  height: 120px;
+}
+main .inner .right_box .Schedule table .bg_02 {
+  border-bottom: 1px solid #ddd;
+}
+main .inner .right_box .Schedule table .bg_03 {
+  background-color: #f2f2f2;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 10rem;
+}
+main .inner .right_box .Schedule table .bg_04 {
+  border-bottom: 1px solid #ddd;
 }
 
 /* main start */
