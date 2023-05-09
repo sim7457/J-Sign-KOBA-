@@ -33,7 +33,6 @@ main {
   margin-bottom: 15px;
   padding-left: 5px;
   box-shadow: 0px 0px 27px -4px rgb(116 116 116 / 30%);
-
   outline: none;
 }
 
@@ -64,6 +63,7 @@ main {
 }
 .Keep_logged_in {
   display: flex;
+  align-items: center;
   gap: 10px;
   width: 250px;
   margin: 10px 40px 50px 40px;
@@ -98,6 +98,12 @@ main {
     line-height: 45px;
     font-size: 18px;
   }
+  .id_box input::placeholder {
+    font-size: 0.8rem;
+  }
+  .pass_box input::placeholder {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -107,7 +113,7 @@ main {
     padding: 1.5rem 1rem 1.5rem 1rem;
   }
   .loginBox .logo {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .loginBox .logo img {
     width: 200px;
@@ -117,10 +123,20 @@ main {
     width: 200px;
     height: 40px;
   }
+  .Keep_logged_in p {
+    font-size: 14px;
+  }
 
   .login {
     width: 180px;
     line-height: 40px;
     font-size: 16px;
+  }
+
+  .id_box input::placeholder {
+    font-size: 0.6rem;
+  }
+  .pass_box input::placeholder {
+    font-size: 0.6rem;
   }
 }
